@@ -1,0 +1,30 @@
+<style>
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a.active {
+    color: yellow;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+</style>
+
+<nav>
+  <!-- Especificamos con routerLinkActiveOptions exact: true, que aplique la aclase active de routerLinkActive, solo si estamos en el path exacto -->
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Counter</a>
+  <!-- Enlace utilizando un componente computado para pasar parametros(?) de manera dinámica -->
+  <a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero</a>
+
+
+</nav>
