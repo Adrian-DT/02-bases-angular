@@ -12,5 +12,11 @@ export const routes: Routes = [
   {
     path: 'hero',
     component: HeroPageComponent
+  },
+
+  {
+    // Ruta para redirigir en caso de que accedan a algun path que no exista
+    path: '**',
+    redirectTo: ''
   }
 ];
