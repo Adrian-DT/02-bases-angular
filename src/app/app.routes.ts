@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { CounterPageComponent } from './pages/counter/counter-page.component';
 import { HeroPageComponent } from './pages/hero/hero-page.component';
+import { DragonballPageComponent } from './pages/dragonball/dragonball-page.component';
 
 export const routes: Routes = [
 
@@ -15,8 +16,13 @@ export const routes: Routes = [
   },
 
   {
-    // Ruta para redirigir en caso de que accedan a algun path que no exista
+    path: "dragonball",
+    component: DragonballPageComponent
+  },
+
+  {
+    // Ruta para redirigir en caso de que accedan a algun path que no exista, colocar siempre en última posición
     path: '**',
     redirectTo: ''
-  }
+  },
 ];
