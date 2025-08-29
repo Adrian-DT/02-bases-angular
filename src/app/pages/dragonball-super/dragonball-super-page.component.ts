@@ -1,5 +1,4 @@
-import { NgClass } from "@angular/common";
-import { ChangeDetectionStrategy, Component, computed, signal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
 
 // Creamos la interfaz para especificar el tipo de dato que contendrá el array de characters
 interface Character {
@@ -9,16 +8,13 @@ interface Character {
 }
 
 @Component({
-  templateUrl: './dragonball-page-component.html',
+  templateUrl: './dragonball-super-page-component.html',
   // Para especificar que no quieres utilizar ZoneJS en este componente, mejorando su performance
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // Importamos el ngClass para poder utilizarlo en las etiquetas html
-  imports: [
-    // NgClass
-  ]
+  selector: 'dragonball-super',
 })
 
-export class DragonballPageComponent {
+export class DragonballSuperPageComponent {
 
   // Creamos dos señales que corresponderan a dos inputs del formulario para añadir nuevos personajes
   name = signal('');
@@ -27,9 +23,7 @@ export class DragonballPageComponent {
   // Indicamos que characters es una señal de arrays de tipo Character
   characters = signal(<Character[]>[
     { id: 1, name: 'Goku', power: 9001 },
-    // { id: 2, name: 'Vegeta', power: 9000 },
-    // { id: 3, name: 'Piccolo', power: 3000 },
-    // { id: 4, name: 'Yamcha', power: 500 },
+    { id: 2, name: 'Vegeta', power: 9000 },
   ]);
 
   // Funcion que retorna un objeto con la clase text-danger de bootstrap
