@@ -1,17 +1,13 @@
 import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
-
-// Creamos la interfaz para especificar el tipo de dato que contendrá el array de characters
-interface Character {
-  id: number;
-  name: string;
-  power: number;
-}
+import { CharacterListComponent } from "../../components/dragonball/character-list/character-list.component";
+import { Character } from "../../interfaces/character.interface";
 
 @Component({
   templateUrl: './dragonball-super-page-component.html',
   // Para especificar que no quieres utilizar ZoneJS en este componente, mejorando su performance
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'dragonball-super',
+  imports: [CharacterListComponent],
 })
 
 export class DragonballSuperPageComponent {
