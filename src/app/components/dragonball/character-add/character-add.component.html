@@ -1,0 +1,27 @@
+    <h3>Agregar: {{ name() }}</h3>
+    <!-- Le asignamos la referencia local mediante # al input, para poder hacer referencia a él mismo
+    cuando setteamos la señal
+    mediante el evento (change) setteamos el valor al perder el foco en el input, sin embargo
+    mediante el evento input, actualizamos el valor cada vez que el campo de texto cambia -->
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+      [value]="name()"
+      (change)="name.set(txtName.value)"
+      (input)="name.set(txtName.value)"
+      #txtName
+    >
+
+    <h3>Agregar: {{ power() }}</h3>
+    <input
+      type="number"
+      class="form-control mt-2"
+      placeholder="Poder"
+      [value]="power()"
+      (change)="power.set(txtPower.valueAsNumber)"
+      (input)="power.set(txtPower.valueAsNumber)"
+      #txtPower
+      >
+
+    <button (click)="addCharacter()" class="mt-2 btn btn-primary">Agregar</button>
