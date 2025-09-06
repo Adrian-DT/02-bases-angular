@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
 import { CharacterListComponent } from "../../components/dragonball/character-list/character-list.component";
-import { Character } from "../../interfaces/character.interface";
+import { Character } from '../../interfaces/character.interface';
 import { CharacterAddComponent } from "../../components/dragonball/character-add/character-add.component";
 
 @Component({
@@ -18,6 +18,12 @@ export class DragonballSuperPageComponent {
     { id: 1, name: 'Goku', power: 9001 },
     { id: 2, name: 'Vegeta', power: 9000 },
   ]);
+
+  addCharacter(character: Character) {
+    this.characters.update(
+      (list) => [... list, character]
+    );
+  }
 
   // Funcion que retorna un objeto con la clase text-danger de bootstrap
   // poweredClass = computed(() => {
