@@ -1,8 +1,8 @@
-
-```markdown
 # 🚀 Bases de Angular - Proyecto de Aprendizaje
 
 <div align="center">
+
+<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" width="120"/>
 
 ![Angular](https://img.shields.io/badge/Angular-20.1.0-red?style=for-the-badge&logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue?style=for-the-badge&logo=typescript)
@@ -11,6 +11,21 @@
 **Un proyecto completo para dominar los fundamentos de Angular con las características más modernas del framework**
 
 </div>
+
+## 📑 Tabla de Contenidos
+- [📋 Descripción](#-descripción)
+- [✨ Características Principales](#-características-principales)
+  - [🎯 Funcionalidades Implementadas](#-funcionalidades-implementadas)
+  - [🛠️ Tecnologías y Conceptos](#️-tecnologías-y-conceptos)
+- [🏗️ Estructura del Proyecto](#️-estructura-del-proyecto)
+- [🚀 Inicio Rápido](#-inicio-rápido)
+- [🎮 Funcionalidades por Página](#-funcionalidades-por-página)
+- [📜 Scripts Disponibles](#-scripts-disponibles)
+- [🔧 Configuración del Proyecto](#-configuración-del-proyecto)
+- [📚 Conceptos de Aprendizaje](#-conceptos-de-aprendizaje)
+- [🤝 Contribuciones](#-contribuciones)
+- [📄 Licencia](#-licencia)
+- [👨‍💻 Autor](#-autor)
 
 ## 📋 Descripción
 
@@ -34,19 +49,19 @@ Este proyecto es una implementación práctica de los conceptos fundamentales de
 
 ## 🏗️ Estructura del Proyecto
 
-```
+```text
 src/app/
-├── components/          # Componentes reutilizables
-│   ├── dragonball/     # Componentes específicos de Dragon Ball
-│   └── shared/         # Componentes compartidos
-├── pages/              # Páginas principales
-│   ├── counter/        # Página del contador
-│   ├── hero/           # Gestión de héroes
-│   ├── dragonball/     # Página Dragon Ball
+├── components/           # Componentes reutilizables
+│   ├── dragonball/       # Componentes específicos de Dragon Ball
+│   └── shared/           # Componentes compartidos
+├── pages/                # Páginas principales
+│   ├── counter/          # Página del contador
+│   ├── hero/             # Gestión de héroes
+│   ├── dragonball/       # Página Dragon Ball
 │   └── dragonball-super/ # Página Dragon Ball Super
-├── interfaces/         # Definiciones de tipos
-├── services/          # Servicios de la aplicación
-└── app.routes.ts      # Configuración de rutas
+├── interfaces/           # Definiciones de tipos
+├── services/             # Servicios de la aplicación
+└── app.routes.ts         # Configuración de rutas
 ```
 
 ## 🚀 Inicio Rápido
@@ -102,12 +117,12 @@ src/app/
 npm start              # Inicia servidor de desarrollo
 npm run build          # Build de producción
 npm run watch          # Build en modo watch
-npm test              # Ejecuta tests unitarios
+npm test               # Ejecuta tests unitarios
 
 # Angular CLI
 ng generate component  # Genera nuevo componente
 ng generate service    # Genera nuevo servicio
-ng build --prod       # Build optimizado para producción
+ng build --prod        # Build optimizado para producción
 ```
 
 ## 🔧 Configuración del Proyecto
@@ -134,11 +149,11 @@ Este proyecto te ayudará a dominar:
 
 Las contribuciones son bienvenidas. Si quieres mejorar este proyecto:
 
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork el repositorio  
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)  
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)  
+4. Push a la rama (`git push origin feature/AmazingFeature`)  
+5. Abre un Pull Request  
 
 ## 📄 Licencia
 
@@ -157,4 +172,3 @@ Este proyecto está bajo la Licencia MIT. Ve el archivo `LICENSE` para más deta
 *Construido con ❤️*
 
 </div>
-```
