@@ -5,19 +5,19 @@
 
 <section class="row">
   <div class="col-12 col-sm-6">
-    <!-- Pasamos a la propiedad newCharacter del componente el valor del evento emitido (newCharacter)="$event"-->
+    <!-- Pasamos a la propiedad newCharacter del componente a la propiedad que injecta el servicio como dependencia-->
   <dragonball-character-add
-    (newCharacter)="addCharacter($event)"
+    (newCharacter)="dragonBallService.addCharacter($event)"
   />
 
 
   </div>
 
   <div class="row col-12 col-sm-6">
-    <!-- Pasamos al componente [characters] la signal de dragonball-super-page, para 'rellenar' el componente con información -->
+    <!-- Pasamos al componente [characters] la propiedad que injecta el servicio como dependencia, para 'rellenar' el componente con información -->
     <dragonball-character-list
     listName="Listado de personajes"
-    [characters]="characters()" />
+    [characters]="dragonBallService.characters()" />
 
   </div>
 
